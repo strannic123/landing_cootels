@@ -1,0 +1,53 @@
+@import "normalize";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+$base-color: #848FAC;
+$title-color: #192252;
+$btn-backgr: #0E1734;
+
+
+.wrapper-full {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+
+    &-item {
+      list-style: none;
+      margin-right: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $title-color;
+    }
+
+    &-item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    margin: 50px 0;
+    padding: 14px 16px;
+    background-color: $btn-backgr;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+}
