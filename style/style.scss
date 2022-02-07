@@ -1,13 +1,19 @@
 @import "normalize";
+@import "variables";
 
 body {
   font-family: 'Inter', sans-serif;
 }
 
-$base-color: #848FAC;
-$title-color: #192252;
-$btn-backgr: #0E1734;
-
+.btn {
+  background-color: $btn-backgr;
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
 
 .wrapper-full {
   width: 1440px;
@@ -51,3 +57,63 @@ $btn-backgr: #0E1734;
     color: #FFFFFF;
   }
 }
+
+ //start section Nature
+.nature {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid yellow;
+
+    &-text {
+      max-width: 588px;
+      margin-bottom: 298px;
+    }
+
+    &-title {
+      margin-top: 215px;
+      margin-right: 24px;
+    }
+
+    &-info {
+      margin-bottom: 24px;
+      max-width: 485px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: $base-color;
+    }
+
+    &-button {
+      margin-top: 32px;
+    }
+  }
+
+
+  &__view {
+    display: flex;
+    margin-top: 80px;
+
+    &-img {
+      max-width: 180px;
+      max-height: 588px;
+
+    }
+
+    &-img:nth-child(2) {
+      margin-top: 84px;
+    }
+
+    &-img:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+
+}
+
+
+
+ //end section Nature
