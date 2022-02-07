@@ -110,10 +110,124 @@ body {
       margin-right: 24px;
     }
   }
-
-
 }
 
-
-
  //end section Nature
+
+
+ //start section Hotel
+.hotel {
+  &__content {
+    display: flex;
+    padding: 80px 0;
+    border-bottom:1px solid yellow;
+
+    &-view {
+      //margin: 80px 126px 80px 0;
+      margin-right: 126px;
+
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-title {
+
+      max-width: 690px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 150%;
+      /* or 54px */
+      letter-spacing: -0.01em;
+    }
+
+    &-info {
+      max-width: 584px;
+      margin-top: 16px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: $base-color;
+    }
+
+    &-info:nth-child(2) {
+      margin-top: 24px;
+    }
+
+    &-button {
+      max-width: 152px;
+      margin-top: 32px;
+    }
+  }
+}
+
+ //end section Hotel
+
+
+ //start section Food
+
+
+.food__content {
+  border-bottom: 1px solid yellowgreen;
+  padding: 80px 0;
+
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 64px 126px;
+  }
+
+  & .card__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    /* identical to box height, or 54px */
+    letter-spacing: -0.01em;
+    color: $title-color;
+  }
+
+  & .card__descr {
+    max-width: 584px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: $base-color;
+  }
+
+  &-card-info-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  & .card__image-1 {
+    grid-column: 4 / 7 ;
+    grid-row: 1 / 2;
+    margin-left: 126px;
+  }
+
+  &-card-info-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+  }
+
+  & .card__image-2 {
+    grid-column: 1 / 4 ;
+    grid-row: 1 / 2;
+    margin-right: 126px;
+    margin-top: 64px;
+  }
+}
+ //end section Food
