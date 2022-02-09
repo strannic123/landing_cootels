@@ -565,7 +565,81 @@ body {
 //end section Slider
 
 
-//start section Footer
+//start  Footer
+.footer {
+  width: 100%;
+
+  &__company {
+    width: 48%;
+  }
+
+  &__content {
+    background-color: #0B265A;
+    padding: 120px;
+    display: flex;
+  }
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+  }
+
+  &__subtitle {
+    max-width: 186px;
+    margin: 14px 0 0 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D9DBDE;
+  }
+
+  &__icon {
+    margin-top: 32px;
+  }
+
+  &__social:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  &__nav {
+    width: 52%;
+  }
+
+  &__navigate {
+    //width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__items {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    list-style: none;
+    margin-top: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #D9DBDE;
+  }
+
+  &__link-title {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+}
 
 
-//end section Footer
+//end  Footer

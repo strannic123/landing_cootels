@@ -42,6 +42,11 @@ h1 {
   margin: 0.67em 0;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /* Grouping content
    ========================================================================== */
 /**
@@ -793,6 +798,69 @@ body {
   background: #FAB047;
   border-radius: 50%;
   border: none;
+}
+
+.footer {
+  width: 100%;
+}
+.footer__company {
+  width: 48%;
+}
+.footer__content {
+  background-color: #0B265A;
+  padding: 120px;
+  display: flex;
+}
+.footer__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+.footer__subtitle {
+  max-width: 186px;
+  margin: 14px 0 0 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #D9DBDE;
+}
+.footer__icon {
+  margin-top: 32px;
+}
+.footer__social:not(:last-child) {
+  margin-right: 32px;
+}
+.footer__nav {
+  width: 52%;
+}
+.footer__navigate {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__items {
+  margin: 0;
+  padding: 0;
+}
+.footer__link {
+  list-style: none;
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #D9DBDE;
+}
+.footer__link-title {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
