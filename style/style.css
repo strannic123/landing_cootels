@@ -714,4 +714,63 @@ body {
   z-index: 10;
 }
 
+.slider__content {
+  padding: 80px 0;
+}
+.slider__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slider__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #192252;
+  margin-bottom: 0;
+}
+.slider__pic {
+  padding-top: 62px;
+}
+.slider__descr {
+  max-width: 792px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848FAC;
+  margin-top: 44px;
+}
+.slider__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #192252;
+  margin-top: 40px;
+  margin-bottom: 82px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide,
+.slick-initialized {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.slick-active::marker {
+  color: red;
+}
+
+.slick-dots button {
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
