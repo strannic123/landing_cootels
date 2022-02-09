@@ -362,13 +362,22 @@ body {
   color: #FFFFFF;
 }
 
+.learn-more {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #424F7B;
+}
+
 .wrapper-full {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+  background: #FFFFFF;
 }
 
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -516,6 +525,9 @@ body {
   grid-row: 1/2;
   margin-left: 126px;
 }
+.food__content .card-pic {
+  width: 100%;
+}
 .food__content-card-info-2 {
   display: flex;
   flex-direction: column;
@@ -529,6 +541,177 @@ body {
   grid-row: 1/2;
   margin-right: 126px;
   margin-top: 64px;
+}
+
+.rooms {
+  padding-bottom: 80px;
+}
+.rooms__content .rooms__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rooms__content .rooms__title {
+  margin-top: 80px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+}
+.rooms__content .rooms__descr {
+  margin: 24px 0 0;
+  max-width: 584px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  text-align: center;
+  color: #848FAC;
+}
+.rooms__content .rooms__btn {
+  margin-top: 32px;
+}
+.rooms__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 24px;
+  margin-top: 80px;
+}
+.rooms__card {
+  position: relative;
+  grid-column: span 2;
+}
+.rooms__card__title {
+  margin-top: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  color: #000000;
+}
+.rooms__card-descr {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848FAC;
+}
+.rooms__card-link {
+  margin-top: 32px;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 30px;
+  background: url("/image/svg/arrow_right-ico.svg") no-repeat 100% center;
+}
+.rooms__card-img {
+  width: 100%;
+}
+
+.how__content {
+  padding: 80px 0;
+  display: flex;
+}
+.how__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.how__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #424F7B;
+}
+.how__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #192252;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.how__descr {
+  max-width: 384px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848FAC;
+  margin-top: 24px;
+  margin-right: 224px;
+  margin-bottom: 0;
+}
+.how__wrapbtn {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.how__wrapbtn-text {
+  padding-left: 24px;
+}
+.how__cards {
+  max-width: 588px;
+}
+.how__card {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 36px;
+  margin-top: 24px;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
+  -moz-box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
+  box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
+}
+.how__card-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #424F7B;
+  width: 100%;
+  position: relative;
+}
+.how__card-title:after {
+  display: inline-block;
+  content: "";
+  background-image: url("/image/svg/arrow-down-ico.svg");
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.how__card-descr {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848FAC;
+}
+.how__open .how__card-title:after {
+  display: inline-block;
+  content: "";
+  background-image: url("/image/svg/arrow-up-ico.svg");
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=style.css.map */
