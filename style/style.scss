@@ -67,7 +67,7 @@ body {
   }
 }
 
- //start section Nature
+//start section Nature
 .nature {
 
   &__content {
@@ -121,15 +121,15 @@ body {
   }
 }
 
- //end section Nature
+//end section Nature
 
 
- //start section Hotel
+//start section Hotel
 .hotel {
   &__content {
     display: flex;
     padding: 80px 0;
-    border-bottom:1px solid yellow;
+    border-bottom: 1px solid yellow;
 
     &-view {
       //margin: 80px 126px 80px 0;
@@ -175,10 +175,10 @@ body {
   }
 }
 
- //end section Hotel
+//end section Hotel
 
 
- //start section Food
+//start section Food
 
 
 .food__content {
@@ -218,7 +218,7 @@ body {
   }
 
   & .card__image-1 {
-    grid-column: 4 / 7 ;
+    grid-column: 4 / 7;
     grid-row: 1 / 2;
     margin-left: 126px;
   }
@@ -237,18 +237,19 @@ body {
   }
 
   & .card__image-2 {
-    grid-column: 1 / 4 ;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     margin-right: 126px;
     margin-top: 64px;
   }
 }
- //end section Food
+
+//end section Food
 
 
- //start section Rooms
+//start section Rooms
 .rooms {
-  padding-bottom: 80px ;
+  padding-bottom: 80px;
 
   &__content {
     & .rooms__info {
@@ -260,7 +261,7 @@ body {
     & .rooms__title {
       margin-top: 80px;
       margin-bottom: 0;
-      font-family: 'Montserrat' ,sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 36px;
@@ -269,7 +270,7 @@ body {
     }
 
     & .rooms__descr {
-      margin: 24px 0 0 ;
+      margin: 24px 0 0;
 
       max-width: 584px;
       font-weight: normal;
@@ -333,10 +334,10 @@ body {
   }
 }
 
- //end section Rooms
+//end section Rooms
 
 
- //start section How
+//start section How
 .how {
 
   &__content {
@@ -398,7 +399,6 @@ body {
 
 
   }
-
 
 
   &__card {
@@ -463,14 +463,15 @@ body {
   }
 }
 
- //end section How
+//end section How
 
 
- //start section Slider
+//start section Slider
 .slider {
 
   &__content {
     padding: 80px 0;
+    margin-bottom: 82px;
   }
 
   &__card {
@@ -503,6 +504,7 @@ body {
     line-height: 150%;
     color: #848FAC;
     margin-top: 44px;
+    text-align: center;
   }
 
   &__subtitle {
@@ -511,7 +513,7 @@ body {
     line-height: 150%;
     color: $title-color;
     margin-top: 40px;
-    margin-bottom: 82px;
+    margin-bottom: 26px;
   }
 }
 
@@ -520,21 +522,50 @@ body {
 .slick-dots {
   display: flex;
   justify-content: center;
+  color: #FAB047;
+  position: absolute;
+  bottom: -10%;
+  left: 48%;
+  transform: translateX(-50%);
+
 }
 
 .slick-slide,
 .slick-initialized {
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
 }
 
-.slick-active::marker {
-  color: red;
+.slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
 }
-.slick-dots button {
-  visibility: hidden;
+
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: rgba(250, 176, 71, 0.35);
+  border-radius: 50%;
+  border: none;
 }
+
+.slick-dots .slick-active button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: #FAB047;
+  border-radius: 50%;
+  border: none;
+}
+
 
 // end настройки slick-slider
 
- //end section Slider
+//end section Slider
+
+
+//start section Footer
+
+
+//end section Footer

@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
@@ -16,48 +18,49 @@
   <title>Cootels</title>
 </head>
 <body>
-  <div class="wrapper-full">
-    <header>
-      <div class="wrapper">
-        <div class="header">
-          <div class="header__logo">
-            <img src="./image/svg/cootels-logo.svg" alt="Cootels">
+<div class="wrapper-full">
+  <header>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__logo">
+          <img src="./image/svg/cootels-logo.svg" alt="Cootels">
+        </div>
+        <nav>
+          <ul class="header__list">
+            <li class="header__list-item">Rooms</li>
+            <li class="header__list-item">Reservation</li>
+            <li class="header__list-item">Contacts</li>
+          </ul>
+        </nav>
+        <button class="header__btn">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!--   start section Nature -->
+  <section class="nature">
+    <div class="wrapper">
+      <div class="nature__content">
+        <div class="nature__content-text">
+          <h1 class="nature__content-title">Nature, Warmth, and Beauty in One Space</h1>
+          <div class="nature__content-descr">
+            <p class="nature__content-info">One place to release all the stress, bring back happines, and get back to
+              nature. We provide the best room and nature for you. Come visit us anytime you want.</p>
           </div>
-          <nav>
-             <ul class="header__list">
-               <li class="header__list-item">Rooms</li>
-               <li class="header__list-item">Reservation</li>
-               <li class="header__list-item">Contacts</li>
-             </ul>
-          </nav>
-          <button class="header__btn" >Get Started</button>
+          <button class="nature__content-button btn">Reservation</button>
+        </div>
+        <div class="nature__view">
+          <img class="nature__view-img" src="./image/nature-1.jpg" alt="nature-image">
+          <img class="nature__view-img " src="./image/nature-2.jpg" alt="nature-image">
+          <img class="nature__view-img" src="./image/nature-3.jpg" alt="nature-image">
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-<!--   start section Nature -->
-    <section class="nature">
-      <div class="wrapper">
-        <div class="nature__content">
-          <div class="nature__content-text">
-            <h1 class="nature__content-title">Nature, Warmth, and Beauty in One Space</h1>
-            <div class="nature__content-descr">
-              <p class="nature__content-info">One place to release all the stress, bring back happines, and get back to nature. We provide the best room and nature for you. Come visit us anytime you want.</p>
-            </div>
-            <button class="nature__content-button btn">Reservation</button>
-          </div>
-          <div class="nature__view">
-            <img class="nature__view-img" src="./image/nature-1.jpg" alt="nature-image">
-            <img class="nature__view-img " src="./image/nature-2.jpg" alt="nature-image">
-            <img class="nature__view-img" src="./image/nature-3.jpg" alt="nature-image">
-          </div>
-        </div>
-      </div>
-    </section>
+  <!--   end section Nature -->
 
-<!--   end section Nature -->
-
-<!--   start section Hotel -->
+  <!--   start section Hotel -->
   <section class="hotel">
     <div class="wrapper">
       <div class="hotel__content">
@@ -70,9 +73,11 @@
               Cozy and Down to Earth Cootage Hotel in Norway.
             </h1>
             <p class="hotel__content-info">
-              Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique and spectacular panorama of the Hallerbos Jungle.
+              Our Cootage Hotel is an intimate hideway concieved for dicerning travelers. It faces directly the unique
+              and spectacular panorama of the Hallerbos Jungle.
             </p>
-            <p class="hotel__content-info">Cootels extends along a private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and beauty with us.</p>
+            <p class="hotel__content-info">Cootels extends along a private, quiet, and beautiful nature. Stay away from
+              crowd and enjoy the cozy and beauty with us.</p>
           </div>
           <button class="hotel__content-button btn">Learn More</button>
         </div>
@@ -80,199 +85,220 @@
     </div>
   </section>
 
-<!--   end section Hotel -->
+  <!--   end section Hotel -->
 
 
-<!--   start section Food -->
-    <section class="food">
-      <div class="wrapper">
-        <div class="food__content">
-          <div class="food__content-card">
-            <div class="food__content-card-info-1">
-              <h2 class="card__title">
-                Cabin Activities
-              </h2>
-              <p class="card__descr">
-                Don’t worry to get bored easily in our cabin. We have so many cabin activities for you to do it alone or with group. Maybe this is the best chance for you to make new friends or even a lover.
-              </p>
-            </div>
-
-            <div class="card__image-1">
-              <img class="card-pic" src="/image/food-1.jpg" alt="Cabin Activities">
-            </div>
-          </div>
-          <div class="food__content-card">
-            <div class="card__image-2">
-              <img class="card-pic" src="/image/food-2.jpg" alt="100% Organic Food">
-            </div>
-
-            <div class="food__content-card-info-2">
-              <h2 class="card__title">
-                100% Organic Food
-              </h2>
-              <p class="card__descr">
-                We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner request.What ever made your taste buds happy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--   end section Food -->
-
-
-<!--   start section Rooms -->
-    <section class="rooms">
-      <div class="wrapper">
-        <div class="rooms__content">
-          <div class="rooms__info">
-            <h2 class="rooms__title">
-              Many Rooms to Choose
+  <!--   start section Food -->
+  <section class="food">
+    <div class="wrapper">
+      <div class="food__content">
+        <div class="food__content-card">
+          <div class="food__content-card-info-1">
+            <h2 class="card__title">
+              Cabin Activities
             </h2>
-            <p class="rooms__descr">
-              There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience
+            <p class="card__descr">
+              Don’t worry to get bored easily in our cabin. We have so many cabin activities for you to do it alone or
+              with group. Maybe this is the best chance for you to make new friends or even a lover.
             </p>
-            <button class="rooms__btn btn">Explore more</button>
           </div>
-          <div class="rooms__cards">
-            <div class="rooms__card">
-              <img src="/image/rooms-card1.jpg" alt="Single Room" class="rooms__card-img">
-              <h3 class="rooms__card-title">
-                Single Room
-              </h3>
-              <p class="rooms__card-descr">
-                Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet others.
-              </p>
-              <a href="#!" class="rooms__card-link learn-more">Learn more</a>
-            </div>
-            <div class="rooms__card">
-              <img src="/image/rooms-card2.jpg" alt="Double Room" class="rooms__card-img">
-              <h3 class="rooms__card-title">
-                Double Room
-              </h3>
-              <p class="rooms__card-descr">
-                Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just for you two
-              </p>
-              <a href="#!" class="rooms__card-link learn-more">Learn more</a>
-            </div>
-            <div class="rooms__card">
-              <img src="/image/rooms-card3.jpg" alt="Cootage" class="rooms__card-img">
-              <h3 class="rooms__card-title">
-                Cootage
-              </h3>
-              <p class="rooms__card-descr">
-                Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or friends
-              </p>
-              <a href="#!" class="rooms__card-link learn-more">Learn more</a>
-            </div>
+
+          <div class="card__image-1">
+            <img class="card-pic" src="/image/food-1.jpg" alt="Cabin Activities">
           </div>
         </div>
-      </div>
-    </section>
+        <div class="food__content-card">
+          <div class="card__image-2">
+            <img class="card-pic" src="/image/food-2.jpg" alt="100% Organic Food">
+          </div>
 
-<!--   end section Rooms -->
-
-
-<!--   start section How -->
-    <section class="how">
-      <div class="wrapper">
-        <div class="how__content">
-          <div class="how__info">
-            <div class="how__subtitle">
-              Start your journey!
-            </div>
-            <h2 class="how__title">
-              How to Get My Room?
+          <div class="food__content-card-info-2">
+            <h2 class="card__title">
+              100% Organic Food
             </h2>
-            <p class="how__descr">
-              You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point
+            <p class="card__descr">
+              We served 100% organic, low process and delicious food. We allow our guest to have breakfast or dinner
+              request.What ever made your taste buds happy.
             </p>
-            <div class="how__wrapbtn">
-              <button class="how__btn btn">Contact us</button>
-              <p class="how__wrapbtn-text">Explore more room</p>
-            </div>
-          </div>
-          <div class="how__cards">
-            <div class="how__card">
-              <div class="how__card-title">
-                1. Choose a room and date
-              </div>
-              <div class="how__card-descr"></div>
-            </div>
-            <div class="how__card how__open">
-              <div class="how__card-title ">
-                2. Check for room availability
-              </div>
-              <div class="how__card-descr">
-                Contact us via phone or email, ask for availability of you choice of room. We might offer you something exciting.
-              </div>
-            </div>
-            <div class="how__card">
-              <div class="how__card-title">
-                3. Enjoy your room
-              </div>
-              <div class="how__card-descr"></div>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-<!--   end section How -->
+    </div>
+  </section>
+  <!--   end section Food -->
 
 
-<!--   start section Slider -->
-    <section class="slider">
-      <div class="wrapper">
-        <div class="slider__content">
-          <h2 class="slider__title">
-            Hear From Our Happy Customers
+  <!--   start section Rooms -->
+  <section class="rooms">
+    <div class="wrapper">
+      <div class="rooms__content">
+        <div class="rooms__info">
+          <h2 class="rooms__title">
+            Many Rooms to Choose
           </h2>
-          <div class="slider__cards">
-
-            <div class="slider__card">
-              <div class="slider__pic">
-                <img src="/image/slider-img-1.png" alt="Kirana Dunham">
-              </div>
-              <p class="slider__descr">
-                “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even with your famility. Worth every penny! you should come and see for your self.  5 out of 5! the waffle is great!”
-              </p>
-              <div class="slider__subtitle">
-                Kirana Dunham
-              </div>
-            </div>
-            <div class="slider__card">
-              <div class="slider__pic">
-                <img src="/image/slider-img-1.png" alt="Kirana Dunham">
-              </div>
-              <p class="slider__descr">
-                “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even with your famility. Worth every penny! you should come and see for your self.  5 out of 5! the waffle is great!”
-              </p>
-              <div class="slider__subtitle">
-                Kirana Dunham
-              </div>
-            </div>
-            <div class="slider__card">
-              <div class="slider__pic">
-                <img src="/image/slider-img-1.png" alt="Kirana Dunham">
-              </div>
-              <p class="slider__descr">
-                “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even with your famility. Worth every penny! you should come and see for your self.  5 out of 5! the waffle is great!”.“Great service, great food, great people. The scenery is also beautiful, you can do so much activity even with your famility. Worth every penny! you should come and see for your self.  5 out of 5! the waffle is great!”
-              </p>
-              <div class="slider__subtitle">
-                Kirana Dunham
-              </div>
-            </div>
-
+          <p class="rooms__descr">
+            There is a room for every needs. We have room for individuals until family size, we also have a cabin for
+            more private experience
+          </p>
+          <button class="rooms__btn btn">Explore more</button>
+        </div>
+        <div class="rooms__cards">
+          <div class="rooms__card">
+            <img src="/image/rooms-card1.jpg" alt="Single Room" class="rooms__card-img">
+            <h3 class="rooms__card-title">
+              Single Room
+            </h3>
+            <p class="rooms__card-descr">
+              Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet
+              others.
+            </p>
+            <a href="#!" class="rooms__card-link learn-more">Learn more</a>
+          </div>
+          <div class="rooms__card">
+            <img src="/image/rooms-card2.jpg" alt="Double Room" class="rooms__card-img">
+            <h3 class="rooms__card-title">
+              Double Room
+            </h3>
+            <p class="rooms__card-descr">
+              Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just
+              for you two
+            </p>
+            <a href="#!" class="rooms__card-link learn-more">Learn more</a>
+          </div>
+          <div class="rooms__card">
+            <img src="/image/rooms-card3.jpg" alt="Cootage" class="rooms__card-img">
+            <h3 class="rooms__card-title">
+              Cootage
+            </h3>
+            <p class="rooms__card-descr">
+              Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or
+              friends
+            </p>
+            <a href="#!" class="rooms__card-link learn-more">Learn more</a>
           </div>
         </div>
       </div>
-    </section>
-<!--   end section Slider -->
+    </div>
+  </section>
 
-  </div>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--   end section Rooms -->
 
-  <script src="js/main.js"></script>
+
+  <!--   start section How -->
+  <section class="how">
+    <div class="wrapper">
+      <div class="how__content">
+        <div class="how__info">
+          <div class="how__subtitle">
+            Start your journey!
+          </div>
+          <h2 class="how__title">
+            How to Get My Room?
+          </h2>
+          <p class="how__descr">
+            You can contact us by phone or email us. Easily tap the contact button below and it will take you to our
+            contact point
+          </p>
+          <div class="how__wrapbtn">
+            <button class="how__btn btn">Contact us</button>
+            <p class="how__wrapbtn-text">Explore more room</p>
+          </div>
+        </div>
+        <div class="how__cards">
+          <div class="how__card">
+            <div class="how__card-title">
+              1. Choose a room and date
+            </div>
+            <div class="how__card-descr"></div>
+          </div>
+          <div class="how__card how__open">
+            <div class="how__card-title ">
+              2. Check for room availability
+            </div>
+            <div class="how__card-descr">
+              Contact us via phone or email, ask for availability of you choice of room. We might offer you something
+              exciting.
+            </div>
+          </div>
+          <div class="how__card">
+            <div class="how__card-title">
+              3. Enjoy your room
+            </div>
+            <div class="how__card-descr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--   end section How -->
+
+
+  <!--   start section Slider -->
+  <section class="slider">
+    <div class="wrapper">
+      <div class="slider__content">
+        <h2 class="slider__title">
+          Hear From Our Happy Customers
+        </h2>
+        <div class="slider__cards">
+
+          <div class="slider__card">
+            <div class="slider__pic">
+              <img src="/image/slider-img-1.png" alt="Kirana Dunham">
+            </div>
+            <p class="slider__descr">
+              “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even
+              with your famility. Worth every penny! you should come and see for your self. 5 out of 5! the waffle is
+              great!”
+            </p>
+            <div class="slider__subtitle">
+              Kirana Dunham
+            </div>
+          </div>
+          <div class="slider__card">
+            <div class="slider__pic">
+              <img src="/image/slider-img-1.png" alt="Kirana Dunham">
+            </div>
+            <p class="slider__descr">
+              “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even
+              with your famility. Worth every penny! you should come and see for your self. 5 out of 5! the waffle is
+              great!”
+            </p>
+            <div class="slider__subtitle">
+              Kirana Dunham
+            </div>
+          </div>
+          <div class="slider__card">
+            <div class="slider__pic">
+              <img src="/image/slider-img-1.png" alt="Kirana Dunham">
+            </div>
+            <p class="slider__descr">
+              “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even
+              with your famility. Worth every penny! you should come and see for your self. 5 out of 5! the waffle is
+              great!”
+            </p>
+            <div class="slider__subtitle">
+              Kirana Dunham
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--   end section Slider -->
+
+
+  <!--   start section Footer -->
+
+
+  <!--   end section Slider -->
+
+
+</div>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>

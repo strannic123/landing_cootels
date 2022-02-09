@@ -4,7 +4,7 @@ $(document).ready(function(){
         dots: true,
         centerPadding: 0,
         accessibility: false,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         arrows: false,
 });
 });
