@@ -1207,6 +1207,22 @@ body {
     -ms-grid-column-span: 4;
     grid-column: 2/6;
   }
+
+  .rooms__content .rooms__title {
+    margin-top: 35px;
+  }
+
+  .food__content {
+    padding: 0;
+  }
+
+  .how__content {
+    padding-top: 0;
+  }
+
+  .slider__content {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 510px) {
   .rooms__card {
