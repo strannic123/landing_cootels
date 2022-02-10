@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import "normalize";
 @import "variables";
 
@@ -14,10 +21,14 @@ body {
   line-height: 19px;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .btn:hover, .btn:focus {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -41,13 +52,22 @@ body {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 10px;
 
   &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     &-item {
@@ -84,7 +104,11 @@ body {
 .nature {
 
   &__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     &-text {
@@ -114,6 +138,8 @@ body {
 
 
   &__view {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 80px;
 
@@ -142,6 +168,8 @@ body {
 //start section Hotel
 .hotel {
   &__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 80px 0;
 
@@ -152,8 +180,15 @@ body {
     }
 
     &-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 
@@ -199,7 +234,9 @@ body {
   padding: 80px 0;
 
   &-card {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 126px 1fr 126px 1fr 126px 1fr 126px 1fr 126px 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 64px 126px;
   }
@@ -221,16 +258,33 @@ body {
   }
 
   &-card-info-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
 
   & .card__image-1 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
     grid-column: 4 / 7;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     margin-left: 126px;
   }
@@ -240,16 +294,33 @@ body {
   }
 
   &-card-info-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
     grid-column: 4 / 7;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
 
   & .card__image-2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     margin-right: 126px;
     margin-top: 64px;
@@ -265,8 +336,15 @@ body {
 
   &__content {
     & .rooms__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
@@ -299,7 +377,9 @@ body {
   }
 
   &__cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
     grid-template-columns: repeat(6, 1fr);
     gap: 0 24px;
     margin-top: 80px;
@@ -307,10 +387,18 @@ body {
 
   &__card {
     position: relative;
+    -ms-grid-column-span: 2;
     grid-column: span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     &__title {
@@ -365,13 +453,24 @@ body {
 
   &__content {
     padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   &__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 
@@ -409,7 +508,11 @@ body {
 
   &__wrapbtn {
     padding-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     &-text {
@@ -426,9 +529,18 @@ body {
 
   &__card {
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 36px;
     margin-top: 24px;
@@ -436,7 +548,6 @@ body {
 
 
     -webkit-box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
-    -moz-box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
     box-shadow: 4px 4px 19px 0 rgba(34, 60, 80, 0.1);
 
     &-title {
@@ -499,9 +610,18 @@ body {
   }
 
   &__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -544,19 +664,30 @@ body {
 // start настройки slick-slider
 
 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #FAB047;
   position: absolute;
   bottom: -10%;
   left: 48%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 
 }
 
 .slick-slide,
 .slick-initialized {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -600,6 +731,8 @@ body {
   &__content {
     background-color: #0B265A;
     padding: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -641,8 +774,14 @@ body {
   }
 
   &__navigate {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 10px;
   }
@@ -707,7 +846,10 @@ body {
 
 @media screen and (max-width: 1054px) {
   .how__content {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -719,7 +861,10 @@ body {
 
 @media screen and (max-width: 910px) {
   .nature__content {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     &-title {
@@ -753,10 +898,15 @@ body {
 
 @media screen and (max-width: 840px) {
   .hotel__content {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     &-view {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
       order: 2;
       width: 100%;
       margin: 0 auto;
@@ -767,6 +917,8 @@ body {
     }
 
     &-text {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
       order: 1;
       width: 100%;
     }
@@ -800,6 +952,7 @@ body {
 @media screen and (max-width: 765px) {
   .footer {
     &__content {
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
     }
 
@@ -815,13 +968,21 @@ body {
 
     &-card-info-1,
     &-card-info-2 {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
       grid-column: 1 / 7;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
     .card__image-1,
     .card__image-2 {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 4;
       grid-column: 2 /6;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
       grid-row: 3 / 4;
       margin: 40px auto;
     }
@@ -834,6 +995,7 @@ body {
     }
 
     &__card {
+      -ms-grid-column-span: 3;
       grid-column: span 3;
     }
 
@@ -860,6 +1022,8 @@ body {
     &__info {
       text-align: center;
       width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
@@ -884,6 +1048,8 @@ body {
   .rooms {
 
     &__card {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 4;
       grid-column: 2 / 6;
     }
   }
@@ -893,6 +1059,8 @@ body {
   .rooms {
 
     &__card {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
       grid-column: 1 / 7;
     }
   }
@@ -922,6 +1090,8 @@ body {
 
     .card__image-1,
     .card__image-2 {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
       grid-column: 1 / 7;
     }
 
@@ -932,7 +1102,12 @@ body {
 
   .footer {
     &__navigate {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
     }
 
@@ -943,5 +1118,4 @@ body {
   }
 
 }
-
 
