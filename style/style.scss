@@ -13,6 +13,12 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn:hover, .btn:focus {
+  transform: scale(1.05);
 }
 
 .learn-more {
@@ -49,6 +55,11 @@ body {
       font-size: 16px;
       line-height: 19px;
       color: $title-color;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
 
     &-item:last-child {
@@ -73,8 +84,6 @@ body {
   &__content {
     display: flex;
     justify-content: space-between;
-
-    border-bottom: 1px solid yellow;
 
     &-text {
       max-width: 588px;
@@ -129,11 +138,10 @@ body {
   &__content {
     display: flex;
     padding: 80px 0;
-    border-bottom: 1px solid yellow;
 
     &-view {
-      //margin: 80px 126px 80px 0;
       margin-right: 126px;
+      max-width: 384px;
 
     }
 
@@ -182,7 +190,6 @@ body {
 
 
 .food__content {
-  border-bottom: 1px solid yellowgreen;
   padding: 80px 0;
 
   &-card {
@@ -195,7 +202,6 @@ body {
     font-weight: 600;
     font-size: 36px;
     line-height: 150%;
-    /* identical to box height, or 54px */
     letter-spacing: -0.01em;
     color: $title-color;
   }
@@ -276,7 +282,6 @@ body {
       font-weight: normal;
       font-size: 18px;
       line-height: 150%;
-      /* or 27px */
       text-align: center;
       color: $base-color;
     }
@@ -305,12 +310,12 @@ body {
       font-weight: 600;
       font-size: 24px;
       line-height: 150%;
-      /* identical to box height, or 36px */
       color: #000000;
     }
 
     &-descr {
       margin-top: 16px;
+      margin-bottom: 0;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -326,6 +331,12 @@ body {
       text-decoration: none;
       padding-right: 30px;
       background: url("/image/svg/arrow_right-ico.svg") no-repeat 100% center;
+    }
+
+    &-link:hover,
+    &-link:visited,
+    &-link:active {
+      opacity: .75;
     }
 
     &-img {
@@ -395,7 +406,7 @@ body {
   }
 
   &__cards {
-    max-width: 588px;
+    width: 588px;
 
 
   }
@@ -445,6 +456,7 @@ body {
       font-size: 18px;
       line-height: 150%;
       color: #848FAC;
+      display: none;
     }
   }
 
@@ -578,8 +590,10 @@ body {
     padding: 120px;
     display: flex;
   }
-  &__title {
+
+  &__title a {
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -602,6 +616,10 @@ body {
     margin-top: 32px;
   }
 
+  &__social {
+    cursor: pointer;
+  }
+
   &__social:not(:last-child) {
     margin-right: 32px;
   }
@@ -611,11 +629,11 @@ body {
   }
 
   &__navigate {
-    //width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
+
   &__items {
     margin: 0;
     padding: 0;
@@ -627,8 +645,11 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-
     color: #D9DBDE;
+  }
+
+  &__link:not(:first-child) {
+    cursor: pointer;
   }
 
   &__link-title {
@@ -643,3 +664,6 @@ body {
 
 
 //end  Footer
+
+
+

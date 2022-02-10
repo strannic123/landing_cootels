@@ -365,6 +365,12 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn:hover, .btn:focus {
+  transform: scale(1.05);
 }
 
 .learn-more {
@@ -402,6 +408,10 @@ body {
   line-height: 19px;
   color: #192252;
 }
+.header__list-item a {
+  text-decoration: none;
+  color: inherit;
+}
 .header__list-item:last-child {
   margin-right: 0;
 }
@@ -418,7 +428,6 @@ body {
 .nature__content {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid yellow;
 }
 .nature__content-text {
   max-width: 588px;
@@ -457,10 +466,10 @@ body {
 .hotel__content {
   display: flex;
   padding: 80px 0;
-  border-bottom: 1px solid yellow;
 }
 .hotel__content-view {
   margin-right: 126px;
+  max-width: 384px;
 }
 .hotel__content-text {
   display: flex;
@@ -494,7 +503,6 @@ body {
 }
 
 .food__content {
-  border-bottom: 1px solid yellowgreen;
   padding: 80px 0;
 }
 .food__content-card {
@@ -506,7 +514,6 @@ body {
   font-weight: 600;
   font-size: 36px;
   line-height: 150%;
-  /* identical to box height, or 54px */
   letter-spacing: -0.01em;
   color: #192252;
 }
@@ -572,7 +579,6 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  /* or 27px */
   text-align: center;
   color: #848FAC;
 }
@@ -596,11 +602,11 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  /* identical to box height, or 36px */
   color: #000000;
 }
 .rooms__card-descr {
   margin-top: 16px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -613,6 +619,9 @@ body {
   text-decoration: none;
   padding-right: 30px;
   background: url("/image/svg/arrow_right-ico.svg") no-repeat 100% center;
+}
+.rooms__card-link:hover, .rooms__card-link:visited, .rooms__card-link:active {
+  opacity: 0.75;
 }
 .rooms__card-img {
   width: 100%;
@@ -664,7 +673,7 @@ body {
   padding-left: 24px;
 }
 .how__cards {
-  max-width: 588px;
+  width: 588px;
 }
 .how__card {
   max-width: 100%;
@@ -706,6 +715,7 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #848FAC;
+  display: none;
 }
 .how__open .how__card-title:after {
   display: inline-block;
@@ -811,8 +821,9 @@ body {
   padding: 120px;
   display: flex;
 }
-.footer__title {
+.footer__title a {
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -830,6 +841,9 @@ body {
 }
 .footer__icon {
   margin-top: 32px;
+}
+.footer__social {
+  cursor: pointer;
 }
 .footer__social:not(:last-child) {
   margin-right: 32px;
@@ -853,6 +867,9 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #D9DBDE;
+}
+.footer__link:not(:first-child) {
+  cursor: pointer;
 }
 .footer__link-title {
   margin-top: 0;
